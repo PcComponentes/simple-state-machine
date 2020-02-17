@@ -1,1 +1,1 @@
-# simple-state-machine
+# Simple State Machine
