@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace PcComponentes\SimpleStateMachine;
 
-use Pccomponentes\Ddd\Domain\Model\ValueObject\StringValueObject;
-use Pccomponentes\Ddd\Domain\Model\ValueObject\Uuid;
+use PcComponentes\Ddd\Domain\Model\ValueObject\StringValueObject;
+use PcComponentes\Ddd\Domain\Model\ValueObject\Uuid;
 
 trait StatusMachine
 {
@@ -32,7 +32,8 @@ trait StatusMachine
     {
         return \in_array(
             $status->value(),
-            $this->currentAllowedStatusChanges()
+            $this->currentAllowedStatusChanges(),
+            true,
         );
     }
 
@@ -52,8 +53,8 @@ trait StatusMachine
                 \sprintf(
                     'The %s class does not implement the %s interface',
                     $class,
-                    StatusChangeNotAllowedException::class
-                )
+                    StatusChangeNotAllowedException::class,
+                ),
             );
         }
     }

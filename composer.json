@@ -1,24 +1,24 @@
 {
-  "name": "pccomponentes/simple-state-machine",
-  "description": "Simple State Machine",
-  "license": "MIT",
-  "type": "library",
-  "authors": [
-    {
-      "name": "Zoilo Mora",
-      "email": "zoilo.mora@pccomponentes.com"
+    "name": "pccomponentes/simple-state-machine",
+    "description": "Simple State Machine",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Zoilo Mora",
+            "email": "zoilo.mora@pccomponentes.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PcComponentes\\SimpleStateMachine\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4",
+        "pccomponentes/ddd": "^2.0"
+    },
+    "require-dev": {
+        "pccomponentes/coding-standard": "^1.1"
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "PcComponentes\\SimpleStateMachine\\": "src/"
-    }
-  },
-  "require": {
-    "php": "^7.4",
-    "pccomponentes/ddd": "^1.2"
-  },
-  "require-dev": {
-    "pccomponentes/coding-standard": "^1.0"
-  }
 }
