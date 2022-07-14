@@ -5,8 +5,8 @@
     "type": "library",
     "authors": [
         {
-            "name": "Zoilo Mora",
-            "email": "zoilo.mora@pccomponentes.com"
+            "name": "Cristian Almohalla",
+            "email": "cristian.almohalla@pccomponentes.com"
         }
     ],
     "autoload": {
@@ -16,7 +16,7 @@
     },
     "require": {
         "php": "^7.4 || ^8.0 ",
-        "pccomponentes/ddd": "^2.0"
+        "pccomponentes/ddd": "^2.0 || ^3.0"
     },
     "require-dev": {
         "pccomponentes/coding-standard": "^1.1"
