@@ -4,11 +4,10 @@ declare(strict_types=1);
 namespace PcComponentes\SimpleStateMachine;
 
 use PcComponentes\Ddd\Domain\Model\ValueObject\StringValueObject;
-use PcComponentes\Ddd\Domain\Model\ValueObject\Uuid;
 
 trait StatusMachine
 {
-    private StringValueObject $status;
+    private $status;
 
     abstract public function status(): StringValueObject;
 
@@ -16,7 +15,7 @@ trait StatusMachine
 
     abstract protected static function notAllowedStatusChangeExceptionClass(): string;
 
-    final protected function changeStatus(Uuid $id, StringValueObject $newStatus): void
+    final protected function changeStatus(StringValueObject $id, StringValueObject $newStatus): void
     {
         if (false === $this->canChangeStatus($newStatus)) {
             $class = static::notAllowedStatusChangeExceptionClass();
